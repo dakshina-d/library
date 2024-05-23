@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: librarysystem
+spec:
+  selector:
+    matchLabels:
+      app: librarysystem
+  template:
+    metadata:
+      labels:
+        app: librarysystem
+    spec:
+      containers:
+        - name: librarysystem
+          image: dakshina321epic/librarysystem:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8087

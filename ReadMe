@@ -1,0 +1,14 @@
+API Spec
+http://localhost:8087/swagger-ui/index.html
+
+How to deploy the file.
+1. Build the jar file
+2. run the following commands
+   docker build -t dockerRepositoryName/librarysusyem:latest .
+   docker push dockerRepo/librarysystem:latest
+   kubectl apply -f deployment.yaml
+   kubectl apply -f service.yaml
+
+
+
+
